@@ -1,0 +1,12 @@
+<launch>
+    <!-- 
+    <arg name="bag_file_name" value="bag_to_convert.bag" />
+    <arg name="image_topic" value="/front_camera/tag_detections_image" />
+
+    <node pkg="rosbag" type="play" name="rosbag" args="$(find video_from_rosbag)/bags/$(arg bag_file_name)"/>
+    <node name="extract" pkg="image_view" type="extract_images" respawn="false" output="screen" cwd="ROS_HOME">
+        <remap from="image" to="$(arg image_topic)"/>
+    </node>
+    -->
+    <node name="convert_to_mp4" pkg="video_from_rosbag" type="video_from_rosbag.py" output="screen" required="true" />
+</launch>
