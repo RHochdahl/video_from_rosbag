@@ -59,5 +59,3 @@ class GUI(object):
                 selected_image_topics[k] = image_topic_list[k]
 
         return selected_image_topics
-
-# gui = GUI()
